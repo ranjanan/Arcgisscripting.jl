@@ -1,5 +1,8 @@
 module Arcgisscripting
 
-# package code goes here
+using PyCall
+@pyimport arcgisscripting as ags
+
+create() = ags.create()
 
 end # module
